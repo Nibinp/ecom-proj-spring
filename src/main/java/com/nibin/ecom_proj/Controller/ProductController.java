@@ -23,6 +23,7 @@ public class ProductController {
     public ResponseEntity<List<Product>> getprod() {
 
          return new  ResponseEntity<>(service.getallproducts(),HttpStatus.OK);
+
     }
 
     @GetMapping("/product/{prodid}")
